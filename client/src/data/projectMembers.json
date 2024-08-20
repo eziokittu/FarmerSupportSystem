@@ -1,0 +1,94 @@
+{
+  "members": [
+    {
+      "firstname": "Anuj",
+      "lastname": "Pradhan",
+      "role": "Role One",
+      "email": "21051716@kiit.ac.in",
+      "image": "memberImages/anuj.png",
+      "links": {
+        "link_linkedin": "https://www.linkedin.com/in/anuj-pradhan-309615239/",
+        "link_github": "-",
+        "link_website": "-",
+        "link_instagram": "https://www.instagram.com/anujpradhan_2001/"
+      }
+    },
+    {
+      "firstname": "Asmita",
+      "lastname": "Mitra",
+      "role": "Role Two",
+      "email": "2105705@kiit.ac.in",
+      "image": "memberImages/asmita.jpeg",
+      "links": {
+        "link_linkedin": "https://www.linkedin.com/in/asmita-mitra-3742a7223/",
+        "link_github": "-",
+        "link_website": "-",
+        "link_instagram": "https://www.instagram.com/mitra.asmita/"
+      }
+    },
+    {
+      "firstname": "Avani",
+      "lastname": "Singh",
+      "role": "Role Three",
+      "email": "21052825@kiit.ac.in",
+      "image": "memberImages/avani.jpeg",
+      "links": {
+        "link_linkedin": "https://www.linkedin.com/in/avani-singh-b656a3225/",
+        "link_github": "https://github.com/Avani-Singh-2003",
+        "link_website": "-",
+        "link_instagram": "https://www.instagram.com/_.avani.nik/"
+      }
+    },
+    {
+      "firstname": "Bodhisatta",
+      "lastname": "Bhattacharjee",
+      "role": "Role Four",
+      "email": "22057025@kiit.ac.in",
+      "image": "memberImages/bodhisatta.jpeg",
+      "links": {
+        "link_linkedin": "https://www.linkedin.com/in/bodhisatta1999/",
+        "link_github": "https://github.com/eziokittu",
+        "link_website": "https://bodhisatta1999.netlify.app/",
+        "link_instagram": "https://www.instagram.com/bodhisatta_bhattacharjee/"
+      }
+    },
+    {
+      "firstname": "Naali",
+      "lastname": "Moksha",
+      "role": "Role Five",
+      "email": "2105725@kiit.ac.in",
+      "image": "memberImages/moksha.png",
+      "links": {
+        "link_linkedin": "-",
+        "link_github": "-",
+        "link_website": "-",
+        "link_instagram": "https://www.instagram.com/mok._s._ha_15/"
+      }
+    },
+    {
+      "firstname": "Radhika",
+      "lastname": "Manish",
+      "role": "Role Six",
+      "email": "2105730@kiit.ac.in",
+      "image": "memberImages/radhika.jpeg",
+      "links": {
+        "link_linkedin": "https://www.linkedin.com/in/radhika2504/",
+        "link_github": "-",
+        "link_website": "-",
+        "link_instagram": "https://www.instagram.com/radhikaa._25/"
+      }
+    }
+  ],
+  "guide": {
+    "firstname": "Dr. Rinky Dutta Rakshit",
+    "role": "Role One",
+    "email": "rinku.rakshitfcs@kiit.ac.in",
+    "image": "memberImages/rinku_maam.jpg",
+    "links": {
+      "link_linkedin": "-",
+      "link_github": "-",
+      "link_instagram": "-",
+      "link_website": "https://cse.kiit.ac.in/profiles/rinku-datta-rakshit/"
+    }
+  }
+}
