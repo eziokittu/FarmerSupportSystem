@@ -45,7 +45,7 @@ function Home({ serverActive }) {
 
 	return (
 		<div
-			className='min-h-[700px] mt-8 bg-white/80 p-4 rounded-xl'
+			className='min-h-[700px] mt-24 md:mt-14 lg:mt-8 bg-white/80 rounded-xl'
 		>
 			<Element name='home'>
 				{/* Form 1 */}
@@ -55,7 +55,8 @@ function Home({ serverActive }) {
 					{/* Heading */}
 					<div>
 						{/* Using Another model - Incomplete [work in progress...] */}
-						Cat and dog classification model
+						{/* Cat and dog classification model */}
+						Work in progress...
 					</div>
 					{/* <textarea
 						className="w-full p-4 border border-gray-300 rounded-xl"
@@ -64,12 +65,12 @@ function Home({ serverActive }) {
 						value={text}
 						onChange={(e) => setText(e.target.value)}
 					></textarea> */}
-					<button
+					{/* <button
 						disabled={disabled}
 						onClick={handleSubmit}
 						className={`px-4 py-2 ${disabled ? 'bg-gray-600' : 'bg-red-500 hover:bg-red-700'}
 						text-white rounded-xl sm:flex `}
-					>Analyze Review Sentiment</button>
+					>Analyze Review Sentiment</button> */}
 
 					{/* Render the CountdownTimer component */}
 					{showTimer && <CountdownTimer triggerTimer={timerTrigger} onTimerEnd={handleTimerEnd} timeInSeconds={1} />}

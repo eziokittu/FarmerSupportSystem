@@ -4,7 +4,17 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'md': '650px',
+        'lg': '960px',
+        'xl': '1260px',
+      },
+      fontFamily: {
+        'Roboto': ["Roboto", 'sans-serif']
+      }
+    },
   },
-  plugins: [],
+  plugins: [
+  ],
 }

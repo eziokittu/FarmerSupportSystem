@@ -31,38 +31,38 @@ const App = () => {
 	}
 
   // React useEffect hook to check server readiness
-	// useEffect(() => {
-	// 	const checkServerReady = async () => {
-	// 		try {
-	// 			const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/working`);
-	// 			if (response.ok) {
-	// 				console.log("Server is ready at: " + formatTime(Date.now()));
-	// 				setServerActive(true); // Server is ready
-	// 			} else {
-	// 				console.log("Server not ready");
-	// 				setServerActive(false); // Server is not ready
-	// 			}
-	// 		} catch (error) {
-	// 			console.log("Error checking server status:", error);
-	// 			setServerActive(false); // Error occurred, assume server is not ready
-	// 		}
-	// 	};
+	useEffect(() => {
+		const checkServerReady = async () => {
+			try {
+				const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/working`);
+				if (response.ok) {
+					console.log("Server is ready at: " + formatTime(Date.now()));
+					setServerActive(true); // Server is ready
+				} else {
+					console.log("Server not ready");
+					setServerActive(false); // Server is not ready
+				}
+			} catch (error) {
+				console.log("Error checking server status:", error);
+				setServerActive(false); // Error occurred, assume server is not ready
+			}
+		};
 
-	// 	// Call the check immediately once
-	// 	checkServerReady();
+		// Call the check immediately once
+		checkServerReady();
 
-	// 	// Set the interval to continuously check server status
-	// 	const intervalId = setInterval(checkServerReady, 10000); // Check every 10 seconds
+		// Set the interval to continuously check server status
+		const intervalId = setInterval(checkServerReady, 10000); // Check every 10 seconds
 
-	// 	// Clean up interval on component unmount
-	// 	return () => clearInterval(intervalId);
-	// }, []);
+		// Clean up interval on component unmount
+		return () => clearInterval(intervalId);
+	}, []);
 
   return (
 		<>
 			<BackgroundTransition>
 				{/* Checking the server status - if the server, when HOSTED, is connected to the client or not */}
-				{/* <ServerStatus serverActive={serverActive}/> */}
+				<ServerStatus serverActive={serverActive}/>
 
 				{/* An opaque are below the server status */}
 				{/* <div className='fixed -top-10 z-10 blur-xl h-[100px] bg-gray-200 w-full' /> */}

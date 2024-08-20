@@ -15,13 +15,13 @@ const ProjectMemberCard = ({ member, isGuide }) => {
     <div className='w-52 flex flex-col group relative ' >
 
       {/* Image Wrapper */}
-      <div className={`${isGuide ? 'h-52' : 'h-36'} w-fit mx-auto relative`}>
+      <div className={`${isGuide ? 'h-52' : 'h-36'} w-fit mx-auto relative border-4 border-slate-700 group-hover:border-black`}>
 
         {/* Image */}
         <img
           src={member.image}
           alt={member.name}
-          className={`${isGuide ? 'h-52' : 'h-36'} w-fit mx-auto`}
+          className={`${isGuide ? 'h-52' : 'h-36'} pb-2 w-fit mx-auto`}
         />
 
         {/* Black Screen Overlay */}

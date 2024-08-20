@@ -6,7 +6,7 @@ import projectMembers from '../../data/projectMembers.json';
 
 const Footer = () => {
   return (
-    <div className='text-center relative'>
+    <div className='text-center relative font-Roboto'>
 
       {/* A gap */}
       <div className='py-2 w-full border-t-2 border-black'></div>
