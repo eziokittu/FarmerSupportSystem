@@ -1,6 +1,6 @@
 import React from 'react';
 import { Element } from "react-scroll";
-import ProjectMemberCard from '../reusable/ProjectMemberCard';
+import ProjectMemberCard from '../Reusable/ProjectMemberCard';
 
 import projectMembers from '../../data/projectMembers.json';
 
