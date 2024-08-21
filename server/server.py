@@ -9,7 +9,7 @@ app = Flask(__name__)
 CORS(app)
 
 PORT = 5000
-MODEL_PATH = './Models/model_catdog1.h5'
+MODEL_PATH = './models/model_catdog1.h5'
 
 # Load the pre-trained model
 model = tf.keras.models.load_model(MODEL_PATH)
