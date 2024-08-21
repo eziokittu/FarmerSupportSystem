@@ -40,7 +40,7 @@ const FileUpload = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
       <form onSubmit={handleSubmit} className="bg-white p-3 md:p-6 rounded-lg shadow-md w-52 md:w-80">
-        <h2 className="text-xl font-bold mb-4 text-center">Upload or Capture Image</h2>
+        <h2 className="text-xl font-bold mb-4 text-center">Upload a cat/dog Image</h2>
 
         <input
           type="file"
