@@ -4,7 +4,6 @@ import numpy as np
 import tensorflow as tf
 from tensorflow.keras.utils import img_to_array, load_img
 from PIL import Image
-import io
 
 app = Flask(__name__)
 CORS(app)
