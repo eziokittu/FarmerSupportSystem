@@ -25,9 +25,9 @@ const ProjectMemberCard = ({ member, isGuide }) => {
         />
 
         {/* Black Screen Overlay */}
-        <div className="absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
+        <div className="absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-100 flex items-end justify-center transition-opacity duration-300">
           {/* Contact Icons (Centered) */}
-          <div className='flex flex-row gap-1'>
+          <div className='flex flex-row gap-1 pb-2'>
 
             {/* Linkedin Button */}
             {(member.links.link_linkedin!=='-') && (<button

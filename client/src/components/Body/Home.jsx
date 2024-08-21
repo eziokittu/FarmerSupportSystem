@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import CountdownTimer from '../Reusable/CountdownTimer';
+import FileUpload from '../Reusable/FileUpload';
 import { Element } from 'react-scroll';
 
 function Home({ serverActive }) {
@@ -10,31 +11,31 @@ function Home({ serverActive }) {
 	const [showTimer, setShowTimer] = useState(false); // State variable to control timer visibility
 	const [timerTrigger, setTimerTrigger] = useState(false); // State variable to trigger the timer
 
-	const handleSubmit = async (e) => {
-		e.preventDefault();
-		const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/analyze1`, {
-			method: 'POST',
-			headers: {
-				'Content-Type': 'application/json',
-			},
-			body: JSON.stringify({ text }),
-		});
+	// const handleSubmit = async (e) => {
+	// 	e.preventDefault();
+	// 	const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/analyze1`, {
+	// 		method: 'POST',
+	// 		headers: {
+	// 			'Content-Type': 'application/json',
+	// 		},
+	// 		body: JSON.stringify({ text }),
+	// 	});
 
-		if (response.ok) {
-			const jsonResponse = await response.json();
-			if (jsonResponse.ok === 1) {
-				setResult(jsonResponse.result);
-				setDisabled(true);
-				setShowTimer(true); // Show the timer
-				setTimerTrigger(true); // Trigger the timer
-				getData(jsonResponse.result)
-			} else {
-				console.log(jsonResponse.message);
-			}
-		} else {
-			console.log('Network response was not ok.');
-		}
-	};
+	// 	if (response.ok) {
+	// 		const jsonResponse = await response.json();
+	// 		if (jsonResponse.ok === 1) {
+	// 			setResult(jsonResponse.result);
+	// 			setDisabled(true);
+	// 			setShowTimer(true); // Show the timer
+	// 			setTimerTrigger(true); // Trigger the timer
+	// 			getData(jsonResponse.result)
+	// 		} else {
+	// 			console.log(jsonResponse.message);
+	// 		}
+	// 	} else {
+	// 		console.log('Network response was not ok.');
+	// 	}
+	// };
 
 	// Callback function to handle timer end event
 	const handleTimerEnd = () => {
@@ -45,7 +46,7 @@ function Home({ serverActive }) {
 
 	return (
 		<div
-			className='min-h-[700px] mt-24 md:mt-14 lg:mt-8 bg-white/80 rounded-xl'
+			className='min-h-[700px] pt-24 md:pt-14 lg:pt-8 bg-white/80 rounded-xl'
 		>
 			<Element name='home'>
 				{/* Form 1 */}
@@ -53,7 +54,7 @@ function Home({ serverActive }) {
 					className="space-y-4 relative"
 				>
 					{/* Heading */}
-					<div>
+					<div className='text-center'>
 						{/* Using Another model - Incomplete [work in progress...] */}
 						{/* Cat and dog classification model */}
 						Work in progress...
@@ -106,6 +107,8 @@ function Home({ serverActive }) {
 
 						</div>
 					)}
+
+					<FileUpload />
 				</div>
 			</Element>
 		</div>

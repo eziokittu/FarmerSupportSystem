@@ -15,7 +15,7 @@ const Navbar = () => {
     <div className='bg-gray-200 z-20 fixed h-24 md:h-14 lg:h-8 w-full border-y-2 border-black'>
 
       <div className='w-full md:w-[650px] lg:w-[960px] xl:w-[1260px] mx-auto text-center flex flex-col'>
-        <div className='flex flex-row justify-between'>
+        <div className='flex flex-row justify-center gap-4 sm:justify-between'>
           {/* Website Title */}
           <div
             onClick={() => scrollToSection('home')}

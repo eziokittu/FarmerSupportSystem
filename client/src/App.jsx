@@ -52,7 +52,7 @@ const App = () => {
 		checkServerReady();
 
 		// Set the interval to continuously check server status
-		const intervalId = setInterval(checkServerReady, 10000); // Check every 10 seconds
+		const intervalId = setInterval(checkServerReady, 60000); // Check every 60 seconds
 
 		// Clean up interval on component unmount
 		return () => clearInterval(intervalId);
