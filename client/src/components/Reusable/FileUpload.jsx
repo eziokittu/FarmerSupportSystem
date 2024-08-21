@@ -20,16 +20,22 @@ const FileUpload = () => {
     }
 
     const formData = new FormData();
-    formData.append('image', selectedImage);
+    // Use 'file' as the field name to match what FastAPI is expecting
+    formData.append('file', selectedImage);
 
     try {
-      const response = await fetch('http://localhost:5000/api/predict1', {
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/predict1`, {
         method: 'POST',
         body: formData,
       });
+
+      if (!response.ok) {
+        throw new Error('Failed to upload image');
+      }
+
       const result = await response.json();
       console.log(result);
-      
+
       alert(`Prediction: ${result.prediction}`);
     } catch (error) {
       console.error('Error:', error);
