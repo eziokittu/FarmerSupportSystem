@@ -20,7 +20,6 @@ const FileUpload = () => {
     }
 
     const formData = new FormData();
-    // Use 'file' as the field name to match what FastAPI is expecting
     formData.append('file', selectedImage);
 
     try {
@@ -50,8 +49,7 @@ const FileUpload = () => {
 
         <input
           type="file"
-          accept="image/*"
-          capture="camera"
+          accept="image/*" // Accepts image files only
           onChange={handleImageChange}
           className="mb-4 w-full text-sm"
         />
