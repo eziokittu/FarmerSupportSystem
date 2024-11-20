@@ -1,5 +1,4 @@
-// DL_CNN_1_catdog.js
-import React, { useState } from 'react';
+import { useState } from 'react';
 import ImageUpload from '../Reusable/ImageUpload';
 import PageTextArea from '../Reusable/PageTextArea';
 import FormSubmitButton from '../Reusable/FormSubmitButton';
@@ -50,12 +49,10 @@ const Model = () => {
 
   return (
     <div className='flex flex-col items-center gap-4'>
-      {/* Heading */}
-      <h1>Test the model</h1>
 
       <PageTextArea
         heading={'Crop Leaf Disease Classification Model'}
-        body={'This is a Deep Learning classification model using Vision Transformer for classifying images of various crop leaves.'}
+        body={'This is a Deep Learning classification model for classifying images of various crop leaves.'}
       />
 
       {/* Form to handle file upload and submission */}
